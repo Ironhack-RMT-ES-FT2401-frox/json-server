@@ -18,7 +18,7 @@ server.use(allowAccessFromAnywhere)
 const router = jsonServer.router("db.json") 
 server.use(router)
 
-const PORT = process.env.PORT || 5005
+const PORT = 5005
 
 server.listen(PORT, () => {
   console.log(`Servidor JSON andando! en el puerto ${PORT}`)
